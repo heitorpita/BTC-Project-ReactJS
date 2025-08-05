@@ -1,0 +1,40 @@
+.satoshiConverterCard {
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  max-width: 360px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+}
+
+.converterRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.convertBtn {
+  padding: 0.6rem 1rem;
+  background-color: #f9a825;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, transform 0.2s ease;
+}
+
+.convertBtn:hover {
+  background-color: #d48f00;
+  transform: translateY(-2px);
+}
+
+.btcPrice {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}

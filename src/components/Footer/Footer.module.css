@@ -1,0 +1,34 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 4px solid #fe9411;
+  margin-top: 3rem;
+}
+
+.footer p {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #fe9411;
+}
