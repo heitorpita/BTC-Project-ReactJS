@@ -1,40 +1,91 @@
+/* Fundo escuro cobre toda a tela */
+body, #root, .App {
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #101010;
+  width: 100vw;
+  display: block;
+}
+
+/* Centralização garantida para o cartão */
 .satoshiConverterCard {
-  padding: 1.5rem;
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
-  max-width: 360px;
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.24);
+  padding: 40px 32px 36px 32px;
+  max-width: 400px;
+  width: 100%;
+  color: #fff;
+  border: 2px solid #ff9100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* Não centraliza mais pelo margin, centralização pelo container */
+}
+
+/* Container centralizador que pega toda a tela */
+.centralizeWrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* já tem o fundo escuro no body */
+}
+
+.satoshiConverterCard p {
+  margin: 14px 0;
+  font-size: 1.15rem;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #f1f1f1;
 }
 
 .converterRow {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 14px;
+  margin: 22px 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.converterRow input[type="number"] {
+  background: #222;
+  color: #fff;
+  border: 2px solid #ff9100;
+  border-radius: 8px;
+  padding: 12px 18px;
+  width: 160px;
+  outline: none;
+  font-size: 1.1rem;
+  transition: border 0.2s;
+}
+
+.converterRow input[type="number"]:focus {
+  border: 2px solid #ffa040;
 }
 
 .convertBtn {
-  padding: 0.6rem 1rem;
-  background-color: #f9a825;
-  color: #000;
-  font-weight: 600;
+  background: linear-gradient(90deg, #ff9100 60%, #ff6f00 100%);
+  color: #181818;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.25s ease-in-out, transform 0.2s ease;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(255,145,0,0.18);
 }
 
 .convertBtn:hover {
-  background-color: #d48f00;
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #ffa040 60%, #ff9100 100%);
+  color: #fff;
 }
 
 .btcPrice {
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: #b3b3b3;
+  color: #ff9100;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-top: 18px;
 }
